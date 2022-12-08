@@ -42,11 +42,10 @@ body {
 .hlavicka-vpravo {
     display: flex;
     align-content: center;
-
 }
 
 .logo {
-    width: 140px;
+    width: 100px;
     padding: 50px 0;
 }
 
@@ -54,7 +53,7 @@ body {
 
 .menu {
     display: flex;
-    margin: 50px 0;
+    margin: 40px 0;
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
@@ -117,14 +116,14 @@ h1 {
 }
 
 .upoutavka {
-    font-size: 16px;
+    font-size: 18px;
     color: #a5a5a5;
 }
 
 .tlacitko-velke {
     font-size: 16px;
     font-weight: 600;
-    padding: 10px 20px;
+    padding: 15px 30px;
 }
 
 .minitext {
