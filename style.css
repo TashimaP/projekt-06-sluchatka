@@ -30,6 +30,7 @@ body {
 
 .uvod {
     background-color: #f5f5f5;
+    box-shadow: rgba(33, 35, 38, 0.3) 0px 10px 10px -10px;
 }
 
 /* HLAVICKA */
@@ -107,7 +108,7 @@ ul {
 
 .banner-text {
     flex-basis: 420px;
-    margin: 0 -250px 0 0;
+    margin: 0 -200px 0 0;
 }
 
 h1 {
@@ -131,6 +132,10 @@ h1 {
 .minitext {
     font-size: 13px;
     margin: 30px 0;
+}
+
+.banner-foto {
+    align-self: flex-end;
 }
 
 .banner-foto img {
@@ -195,7 +200,7 @@ h2 {
 
 .copyright {
     color: #959595;
-    padding: 50px 0;
+    margin: 50px 0;
     font-size: 13px;
 }
 
@@ -219,4 +224,94 @@ ul {
     font-weight: bold;
     text-decoration: none;
     padding: 10px;
+}
+
+/* ----- rozhraní ----- */
+
+@media (max-width: 768px) {
+
+    .hlavicka {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo  {
+        padding: 15px;
+    }
+
+    .hlavicka-vpravo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        line-height: 2;
+    }
+
+    .menu-tlacitka {
+        margin: 10px;
+    }
+
+    .banner {
+        flex-direction: column;
+        min-height: auto;
+        
+    }
+
+    .banner-text {
+        flex-basis: auto;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .vlastnosti {
+        margin: 10px;
+        gap: 10px;
+    }
+
+    .vlastnost {
+        flex-basis: calc(50% - 5px);
+        padding: 10px;
+    }
+
+    .vlastnost img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .sekce-bila {
+        margin: 10px 0;
+    }
+
+    .sekce-cerna {
+        padding: 0 10px;
+    }
+
+    .copyright,
+    .paticka-menu {
+        margin: 20px 0;
+        font-size: 10px;
+    }
+
+    .paticka-menu a {
+        font-size: 10px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .vlastnost {
+        flex-basis: 100%;
+        margin: 5px;
+    }
+
+    .paticka-menu a {
+        padding: 4px;
+    }
 }
